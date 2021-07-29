@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 100px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  overflow-x: hidden;
+  background-image: radial-gradient(
+    circle at top,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+}
+
+/* ################# NAME SECTION 📛 ################### */
+
+.name-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.username-label {
+  display: block;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+#username {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  outline: transparent;
+}
+
+.name-btn {
+  margin-top: 25px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  outline: transparent;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(189, 59%, 53%);
+  cursor: pointer;
+  transition: 100ms linear;
+}
+
+.name-btn:hover {
+  background-color: hsl(230, 89%, 62%);
+}
+
+.left {
+  left: -50%;
+  transition: 300ms linear;
+}
+
+/* ################# FOOTER 🦶 ################## */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  text-align: center;
+  margin: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
