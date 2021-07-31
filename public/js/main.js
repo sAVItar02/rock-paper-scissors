@@ -11,4 +11,5 @@ $nameForm.addEventListener("submit", (e) => {
 
   const username = document.querySelector("#username").value;
   document.querySelector(".name-section").classList.add("left");
+  document.querySelector(".dashboard").classList.remove("right");
 });
