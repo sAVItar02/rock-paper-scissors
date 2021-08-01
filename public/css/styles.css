@@ -19,6 +19,18 @@ body {
   );
 }
 
+/* ################# UTIL 🚧 ################### */
+
+.hide {
+  display: none;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ################# NAME SECTION 📛 ################### */
 
 .name-section {
@@ -84,7 +96,130 @@ body {
   transition: 300ms linear;
 }
 
-/* ################# DASHBOARD 🏠 ################## */
+/* ################# ROOMS 🏠 ################## */
+
+.rooms {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  height: 100%;
+  width: 50%;
+  padding: 100px 0px;
+  transition: 300ms linear;
+}
+
+.img-buffer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.img-bg {
+  background-color: #fff;
+  padding: 30px;
+  height: 100px;
+  width: 100px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 8px rgba(0, 0, 0, 0.2) inset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rock-img,
+.paper-img,
+.scissor-img {
+  background-image: radial-gradient(hsl(349, 70%, 56%), hsl(349, 71%, 52%));
+  margin-right: 30px;
+  height: 140px;
+  width: 140px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 -8px rgba(0, 0, 0, 0.2) inset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper-img {
+  background-image: radial-gradient(hsl(230, 89%, 65%), hsl(230, 89%, 62%));
+}
+
+.scissor-img {
+  background-image: radial-gradient(hsl(40, 84%, 53%), hsl(39, 89%, 49%));
+}
+
+.room-btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #48c9b0;
+  margin: 20px;
+  outline: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 100ms linear;
+}
+
+.room-btn:hover {
+  background-color: #2ecc71;
+}
+
+.cancel {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #f1948a;
+  margin: 20px;
+  outline: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 100ms linear;
+}
+
+.cancel:hover {
+  background-color: #e74c3c;
+}
+
+.room-input {
+  padding: 10px;
+  font-size: 25px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  outline: transparent;
+}
+
+.create-room-buffer,
+.join-room-buffer {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.right {
+  left: 150%;
+  transition: 300ms linear;
+}
+
+/* ################# DASHBOARD 📃 ################## */
 
 .dashboard {
   position: absolute;
@@ -162,8 +297,8 @@ body {
   padding: 5px 10px;
 }
 
-.right {
-  left: 150%;
+.right-2 {
+  left: 250%;
   transition: 300ms linear;
 }
 

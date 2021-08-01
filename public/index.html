@@ -26,7 +26,40 @@
     </form>
   </section>
 
-  <section class="dashboard right">
+  <section class="rooms right">
+    <div class="img-buffer">
+      <div class="rock-img">
+        <div class="img-bg"><img src="../images/icon-rock.svg" alt="Rock image"></div>
+      </div>
+      <div class="paper-img">
+        <div class="img-bg"><img src="../images/icon-paper.svg" alt="Paper image"></div>
+      </div>
+      <div class="scissor-img">
+        <div class="img-bg"><img src="../images/icon-scissors.svg" alt="Scissor image"></div>
+      </div>
+    </div>
+
+    <button class="join-btn room-btn">Join Room</button>
+    <button class="create-btn room-btn">Create Room</button>
+
+    <div class="join-room-buffer hide">
+      <input type="text" name="join-room" class="join-room__input room-input" placeholder="Room name" required>
+      <div class="flex-center">
+        <button class="join-room__btn room-btn">Join</button>
+        <button class="cancel">Cancel</button>
+      </div>
+    </div>
+
+    <div class="create-room-buffer hide">
+      <input type="text" name="create-room" class="create-room__input room-input" placeholder="Room name" required>
+      <div class="flex-center">
+        <button class="create-room__btn room-btn">Create</button>
+        <button class="cancel">Cancel</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="dashboard right-2">
     <h1 class="players-head">Players Online</h1>
     <div class="players-buffer">
       <div class="player">
@@ -49,6 +82,8 @@
 
 
   <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
 </body>
 
